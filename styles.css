@@ -25,7 +25,7 @@ header.header img {
 }
 
 section.top-page {
-    background: url('../image/bg.png');
+    background: url('image/bg.png');
     background-size: cover;
     height: 80vh;
     padding: 25px;
@@ -134,15 +134,15 @@ nav.nav li a {
 }
 
 .plant1 {
-    background-image: url(../image/photo1.png);
+    background-image: url(image/photo1.png);
 }
 
 .plant2 {
-    background-image: url(../image/photo2.png);
+    background-image: url(image/photo2.png);
 }
 
 .plant3 {
-    background-image: url(../image/photo3.png);
+    background-image: url(image/photo3.png);
 }
 
 .plant4 {
@@ -184,35 +184,35 @@ nav.nav li a {
 }
 
 .plant-grid1 {
-    background-image: url(../image/Photo4.jpeg);
+    background-image: url(image/Photo4.jpeg);
     grid-column: 1/3;
     grid-row: 1/3;
 }
 
 .plant-grid2 {
-    background-image: url(../image/photo.png);
+    background-image: url(image/photo.png);
     grid-column: 3/5;
 }
 
 .plant-grid3 {
-    background-image: url(../image/photo6.jpeg);
+    background-image: url(image/photo6.jpeg);
     grid-column: 3/5;
 }
 
 .plant-grid4 {
-    background-image: url(../image/PHOTO7.jpeg);
+    background-image: url(image/PHOTO7.jpeg);
     grid-column: 1;
     grid-row: 3/5;
 }
 
 .plant-grid5 {
-    background-image: url(../image/photo8.jpeg);
+    background-image: url(image/photo8.jpeg);
     grid-column: 2/4;
     grid-row: 3/5;
 }
 
 .plant-grid6 {
-    background-image: url(../image/photo5.png);
+    background-image: url(image/photo5.png);
     grid-column: 4;
     grid-row: 3/5;
 }
@@ -230,4 +230,5 @@ footer {
 footer a.cgv {
     text-decoration: none;
     color: black;
+
 }
