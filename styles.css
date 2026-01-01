@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
 }
 
 /* Tête de page */
@@ -18,6 +19,8 @@ body {
 header.header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 header.header img {
@@ -25,7 +28,7 @@ header.header img {
 }
 
 section.top-page {
-    background: url("image/bg.png");
+    background: url("image/bg.png") no-repeat center center;
     background-size: cover;
     height: 80vh;
     padding: 25px;
@@ -41,7 +44,7 @@ section.top-page {
 .big-title {
     color: black;
     font-size: 120px;
-    font-family: 'Abril FatFace', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 100;
     width: 60%;
 }
@@ -53,19 +56,18 @@ section.top-page {
     bottom: 0;
 }
 
-/* Menu navigation */
+/* Navigation */
 
 nav.nav {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     list-style: none;
-    width: 400px;
-    margin-left: 30px;
 }
 
 nav.nav li a {
     color: black;
     text-decoration: none;
+    font-weight: 500;
 }
 
 /* Services */
@@ -74,12 +76,14 @@ nav.nav li a {
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
+    flex-wrap: wrap;
 }
 
 .service-item {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
 }
 
 .delivery-icon {
@@ -93,13 +97,14 @@ nav.nav li a {
     text-align: center;
 }
 
-/* Best sells */
+/* Meilleures ventes */
 
 .section-title {
     font-size: 50px;
-    font-family: 'Abril FatFace', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 100;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .section-title::before {
@@ -116,52 +121,48 @@ nav.nav li a {
 }
 
 .best-plants {
-    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .plant-box {
     position: relative;
     background-size: cover;
     background-position: center;
-}
-
-.no-grid {
-    min-width: 350px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
     height: 500px;
     flex: 1;
+    min-width: 300px;
 }
 
 .plant1 { background-image: url("image/photo1.png"); }
 .plant2 { background-image: url("image/photo2.png"); }
 .plant3 { background-image: url("image/photo3.png"); }
-
-/* Tu avais une erreur ici */
 .plant4 { background-image: url("image/photo4.jpeg"); }
 
 .plant-details {
-    position: absolute;
+    background-color: #ffffffcc;
+    padding: 10px 20px;
     width: 100%;
-    bottom: 0;
-    background-color: #FFFFFFDF;
-    padding: 5px 20px;
 }
 
 .plant-name {
     font-size: 22px;
     font-weight: 600;
-    line-height: 3px;
+    margin: 0;
 }
 
 .plant-price {
     color: #2346a5;
-    line-height: 3px;
     font-size: 14px;
     font-weight: 800;
+    margin: 5px 0 0;
 }
 
-/* Nos plantes */
+/* Nos produits */
 
 .all-plants {
     margin: 100px;
@@ -169,43 +170,43 @@ nav.nav li a {
 
 .plant-grid {
     display: grid;
-    min-height: 150vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 400px);
+    gap: 20px;
 }
 
 .plant-grid1 {
     background-image: url("image/Photo4.jpeg");
-    grid-column: 1/3;
-    grid-row: 1/3;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
 .plant-grid2 {
     background-image: url("image/photo.png");
-    grid-column: 3/5;
+    grid-column: 3 / 5;
 }
 
 .plant-grid3 {
     background-image: url("image/photo6.jpeg");
-    grid-column: 3/5;
+    grid-column: 3 / 5;
 }
 
 .plant-grid4 {
     background-image: url("image/PHOTO7.jpeg");
     grid-column: 1;
-    grid-row: 3/5;
+    grid-row: 3 / 5;
 }
 
 .plant-grid5 {
     background-image: url("image/photo8.jpeg");
-    grid-column: 2/4;
-    grid-row: 3/5;
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
 }
 
 .plant-grid6 {
     background-image: url("image/photo5.png");
     grid-column: 4;
-    grid-row: 3/5;
+    grid-row: 3 / 5;
 }
 
 /* Pied de page */
@@ -230,46 +231,58 @@ footer a.cgv {
 @media (max-width: 768px) {
 
     .big-title {
-        font-size: 55px;
+        font-size: 45px;
         width: 100%;
     }
 
     nav.nav {
-        width: 100%;
-        margin-left: 0;
-        justify-content: center;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .services {
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
         margin: 20px;
     }
 
     .best-plants {
         flex-direction: column;
-        gap: 20px;
     }
 
-    .no-grid {
+    .plant-box {
+        height: 300px;
         min-width: 100%;
-        height: 350px;
     }
 
     .plant-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 300px);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .plant-grid1,
-    .plant-grid2,
-    .plant-grid3,
-    .plant-grid4,
-    .plant-grid5,
-    .plant-grid6 {
-        grid-column: 1;
-        grid-row: auto;
+    .plant-grid > a {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+    }
+
+    .plant-details {
+        background-color: #ffffffcc;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .plant-name {
+        font-size: 18px;
+    }
+
+    .plant-price {
+        font-size: 14px;
     }
 
     footer {
@@ -278,13 +291,3 @@ footer a.cgv {
         margin: 20px;
     }
 }
-.plant-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.plant-grid > a {
-    height: 300px;
-}
-
