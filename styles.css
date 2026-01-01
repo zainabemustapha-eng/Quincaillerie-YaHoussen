@@ -230,23 +230,28 @@ footer a.cgv {
 
 @media (max-width: 768px) {
 
+    /* Titre */
     .big-title {
         font-size: 45px;
         width: 100%;
     }
 
+    /* MENU RESTE EN LIGNE */
     nav.nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
     }
 
+    /* Services */
     .services {
         flex-direction: column;
         align-items: center;
         margin: 20px;
     }
 
+    /* Best plants */
     .best-plants {
         flex-direction: column;
     }
@@ -256,6 +261,7 @@ footer a.cgv {
         min-width: 100%;
     }
 
+    /* Grille des produits → colonne */
     .plant-grid {
         display: flex;
         flex-direction: column;
@@ -268,7 +274,6 @@ footer a.cgv {
         background-position: center;
         display: flex;
         align-items: flex-end;
-        text-decoration: none;
     }
 
     .plant-details {
@@ -285,6 +290,7 @@ footer a.cgv {
         font-size: 14px;
     }
 
+    /* Footer */
     footer {
         flex-direction: column;
         gap: 10px;
