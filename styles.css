@@ -176,7 +176,7 @@ nav.nav li a {
 }
 
 .plant-grid1 {
-    background-image: url("image/Photo4.jpeg");
+    background-image: url("image/photo4.jpeg");
     grid-column: 1 / 3;
     grid-row: 1 / 3;
 }
@@ -297,3 +297,4 @@ footer a.cgv {
         margin: 20px;
     }
 }
+
